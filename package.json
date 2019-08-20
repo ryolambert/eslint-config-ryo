@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-ryo",
   "version": "0.0.0-development",
-  "description": "Ryo's personal ESLint Rules for React &amp; Gatsby Projects.  Yeah I like semi's at the end of my lines! Fight me! 🤜💥🤛",
+  "description": "Ryo's personal ESLint Rules for ⚛ React &amp; 🎩 Gatsby Projects.  Yeah I like semi's at the end of my lines! Fight me! 🤜💥🤛",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
