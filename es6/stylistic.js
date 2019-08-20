@@ -4,12 +4,10 @@ module.exports = {
     'arrow-body-style': 'off', // this is nice, but not useful all the time.
     'prefer-arrow-callback': [
       2,
-      {allowNamedFunctions: true, allowUnboundThis: true},
+      { allowNamedFunctions: true, allowUnboundThis: true },
     ],
     'sort-imports': 'off',
-
-    'babel/object-curly-spacing': 'warn',
-    'babel/semi': 'warn',
+    'babel/semi': 'off',
 
     'no-invalid-this': 'off',
     'babel/no-invalid-this': 'error',
@@ -22,8 +20,8 @@ module.exports = {
         capIsNew: true,
       },
     ],
-    'camelcase': 'off',
-    'babel/camelcase': ['error', {properties: 'always'}],
+    camelcase: 'off',
+    'babel/camelcase': ['error', { properties: 'always' }],
 
     'valid-typeof': 'off',
     'babel/valid-typeof': 'error',
@@ -37,5 +35,6 @@ module.exports = {
     'babel/func-params-comma-dangle': 'off',
     'babel/generator-star-spacing': 'off',
     'babel/object-shorthand': 'off',
+    'babel/object-curly-spacing': 'off',
   },
 };
