@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ryo",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "description": "Ryo's personal ESLint Rules for React &amp; Gatsby Projects.  Yeah I like semi's at the end of my lines! Fight me! 🤜💥🤛",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest/index.js",
     "find-new-rules:react": "eslint-find-rules --unused ./other/test/react/index.js",
     "find-new-rules:webpack": "eslint-find-rules --unused ./other/test/webpack/index.js",
-    "validate": "npm t"
+    "validate": "npm t",
+    "semantic-release": "semantic-release"
   },
   "husky": {
     "hooks": {
@@ -21,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryolambert/eslint-config-ryo.git"
+    "url": "https://github.com/ryolambert/eslint-config-ryo.git"
   },
   "keywords": [
     "eslint",
@@ -59,6 +60,7 @@
     "eslint": "^5.16.0",
     "eslint-find-rules": "^3.4.0",
     "husky": "^3.0.4",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "semantic-release": "^15.13.21"
   }
 }
