@@ -7,4 +7,4 @@ module.exports = {
     'prettier',
   ],
   rules: {},
-}
+};

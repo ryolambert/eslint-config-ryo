@@ -11,4 +11,4 @@ module.exports = {
     './es6/index.js',
   ],
   rules: {},
-}
+};

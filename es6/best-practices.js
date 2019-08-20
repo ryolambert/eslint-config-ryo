@@ -24,4 +24,4 @@ module.exports = {
     //   no eslint version
     'babel/no-await-in-loop': 'off', // this is deprecated
   },
-}
+};

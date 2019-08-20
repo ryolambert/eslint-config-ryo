@@ -1,23 +1,23 @@
-const readPkgUp = require('read-pkg-up')
-const semver = require('semver')
+const readPkgUp = require('read-pkg-up');
+const semver = require('semver');
 
-let oldestSupportedReactVersion = '16.5.2'
+let oldestSupportedReactVersion = '16.5.2';
 
 try {
-  const pkg = readPkgUp.sync({normalize: true})
+  const pkg = readPkgUp.sync({normalize: true});
   // eslint-disable-next-line prefer-object-spread
   const allDeps = Object.assign(
     {react: '16.5.2'},
     pkg.peerDependencies,
     pkg.devDependencies,
     pkg.dependencies,
-  )
+  );
   oldestSupportedReactVersion = semver
     .validRange(allDeps.react)
     .replace(/[>=<|]/g, ' ')
     .split(' ')
     .filter(Boolean)
-    .sort(semver.compare)[0]
+    .sort(semver.compare)[0];
 } catch (error) {
   // ignore error
 }
@@ -117,4 +117,4 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
   },
-}
+};

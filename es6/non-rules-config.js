@@ -7,11 +7,11 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      "experimentalObjectRestSpread": true,
-      "impliedStrict": true,
-      "classes": true
+      'experimentalObjectRestSpread': true,
+      'impliedStrict': true,
+      'classes': true
     }
   },
 
   plugins: ['babel'],
-}
+};

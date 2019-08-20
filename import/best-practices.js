@@ -16,4 +16,4 @@ module.exports = {
     'import/no-webpack-loader-syntax': 'error',
     'import/no-unused-modules': 'off',
   },
-}
+};

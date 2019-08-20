@@ -113,4 +113,4 @@ module.exports = {
     'no-restricted-modules': 'off',
     'no-sync': 'off',
   },
-}
+};

@@ -38,4 +38,4 @@ module.exports = {
     'babel/generator-star-spacing': 'off',
     'babel/object-shorthand': 'off',
   },
-}
+};

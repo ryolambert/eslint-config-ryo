@@ -40,4 +40,4 @@ module.exports = {
     // variables
     'no-use-before-define': ['error', 'nofunc'],
   },
-}
+};

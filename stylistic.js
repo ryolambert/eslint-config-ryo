@@ -50,10 +50,10 @@ module.exports = {
     'no-new-object': 'error',
     'no-plusplus': 'off',
     'no-ternary': 'off',
-    "no-unused-expressions": [
+    'no-unused-expressions': [
       2,
       {
-        "allowTaggedTemplates": true
+        'allowTaggedTemplates': true
       }
     ],
     'no-underscore-dangle': 'off',
@@ -62,10 +62,10 @@ module.exports = {
     'one-var': ['error', {uninitialized: 'always', initialized: 'never'}],
     'operator-assignment': 'off', // readability on a case-by-case basis
     'padding-line-between-statements': 'off', // meh...
-    "prefer-const": [
-      "error",
+    'prefer-const': [
+      'error',
       {
-        "destructuring": "all"
+        'destructuring': 'all'
       }
     ],
     'prefer-destructuring': 'off', // nah, I like it, but not that much...
@@ -75,4 +75,4 @@ module.exports = {
     'sort-vars': 'off',
     'spaced-comment': 'off',
   },
-}
+};

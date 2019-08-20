@@ -20,28 +20,28 @@ module.exports = {
         ],
       },
     ],
-    "organize-imports/organize-imports": ["error", {
-      "orderRules": [{
-        "moduleType": "nodeModule",
-        "comment": "vendor modules"
+    'organize-imports/organize-imports': ['error', {
+      'orderRules': [{
+        'moduleType': 'nodeModule',
+        'comment': 'vendor modules'
       }, {
-        "moduleType": "testModule",
-        "comment": "test modules",
-        "include": ["src/test/"],
-        "exclude":  ["src/test/utils"]
+        'moduleType': 'testModule',
+        'comment': 'test modules',
+        'include': ['src/test/'],
+        'exclude':  ['src/test/utils']
       }, {
-        "moduleType": "utilityModule",
-        "comment": "utility modules",
-        "include": [
-          "src/shared/constants",
-          "src/+(shared|server|test)/utils",
-          "src/server/mock-data"
+        'moduleType': 'utilityModule',
+        'comment': 'utility modules',
+        'include': [
+          'src/shared/constants',
+          'src/+(shared|server|test)/utils',
+          'src/server/mock-data'
         ]
       }],
-      "pathAliases": [{
-        "prefix": "<shared>",
-        "resolvesTo": "./src/shared"
+      'pathAliases': [{
+        'prefix': '<shared>',
+        'resolvesTo': './src/shared'
       }]
     }]
   },
-}
+};

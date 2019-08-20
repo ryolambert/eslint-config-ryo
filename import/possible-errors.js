@@ -12,4 +12,4 @@ module.exports = {
     'import/no-self-import': 'error',
     'import/no-useless-path-segments': 'off',
   },
-}
+};
