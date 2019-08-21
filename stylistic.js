@@ -8,7 +8,7 @@ module.exports = {
     'camelcase': ['error', {properties: 'always'}],
     'capitalized-comments': 'off', // wHO CaRes?
     'consistent-this': 'off', // Too many use-cases for reassigning "this" to different values
-    'func-names': 'error',
+    'func-names': 'off',
     'func-name-matching': 'error',
     'func-style': 'off',
     'id-blacklist': 'error',

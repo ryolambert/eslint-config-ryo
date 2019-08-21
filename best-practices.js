@@ -65,7 +65,10 @@ module.exports = {
     'no-useless-escape': 'error',
     'no-useless-return': 'error',
     'no-void': 'error',
-    'no-warning-comments': ['error', {terms: ['fixme'], location: 'anywhere'}],
+    'no-warning-comments': [
+      'error',
+      { terms: ['fixme'], location: 'anywhere' },
+    ],
     'no-with': 'off',
     'prefer-promise-reject-errors': 'off', // maybe one day... Not sure I'm in...
     'prefer-named-capture-group': 'off', // maybe one day... But I'm not used to it yet.
@@ -87,7 +90,13 @@ module.exports = {
     'no-delete-var': 'error',
     'no-label-var': 'error',
     'no-shadow-restricted-names': 'error',
-    'no-shadow': 'error',
+    'no-shadow': [
+      2,
+      {
+        hoist: 'all',
+        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
+      },
+    ],
     'no-undef-init': 'error',
     'no-undef': 'error',
     'no-undefined': 'off',
@@ -105,7 +114,7 @@ module.exports = {
     'callback-return': 'off', // see known limitations: http://eslint.org/docs/rules/callback-return it's just annoying...
     'global-require': 'warn', // sometimes this is ok. We shouldn't break a build
     'handle-callback-err': 'error',
-    'no-mixed-requires': ['error', {grouping: true, allowCall: false}],
+    'no-mixed-requires': ['error', { grouping: true, allowCall: false }],
     'no-new-require': 'error',
     'no-path-concat': 'error',
     'no-process-env': 'off',
