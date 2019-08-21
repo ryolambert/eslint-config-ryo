@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['import', 'organize-imports'],
+  plugins: ['import'], //Add 'organize-imports'
   env: {
     es6: true,
   },

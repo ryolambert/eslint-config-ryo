@@ -78,6 +78,54 @@ if you're going to use the config for it.
 }
 ```
 
+#### TODO!!! Not Yet Implemented: *Extra Feature - Import Organization*
+
+* If you need to customize your import order and add specialized grouping/comments then add the following to your `.eslintrc` config file:
+
+
+``` javascript
+{
+  // You can use either config with "ryo" or "ryo/import"
+  "extends": ["ryo", "ryo/import"],
+  "rules": {
+    'organize-imports/organize-imports': ['error', {
+      'orderRules': [{
+        'moduleType': 'nodeModule',
+        'comment': 'vendor modules'
+      }, {
+        'moduleType': 'testModule',
+        'comment': 'test modules',
+        'include': ['src/test/'],
+        'exclude':  ['src/test/utils']
+      }, {
+        'moduleType': 'utilityModule',
+        'comment': 'utility modules',
+        'include': [
+          'src/shared/constants',
+          'src/+(shared|server|test)/utils',
+          'src/server/mock-data'
+        ]
+      }],
+      'pathAliases': [{
+        'prefix': '<shared>',
+        'resolvesTo': './src/shared'
+      }]
+    }]
+  }
+}
+```
+
+* This rule-set would format your imports to the example below.
+
+``` javascript
+// vendor modules
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import _ from 'lodash';
+// utility modules
+import sampleUtils from '<shared>/utils/sample-utils';
+```
+
 ## LICENSE
 
 MIT
