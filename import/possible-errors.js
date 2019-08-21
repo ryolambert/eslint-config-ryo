@@ -6,7 +6,7 @@ module.exports = {
     'import/no-unresolved': 'error',
     'import/named': 'error',
     'import/namespace': 'error',
-    'import/no-extraneous-dependencies': 'error',
+    'import/no-extraneous-dependencies': 'warn',
     'import/no-named-as-default-member': 'error',
     'import/no-cycle': 'warn',
     'import/no-self-import': 'error',
